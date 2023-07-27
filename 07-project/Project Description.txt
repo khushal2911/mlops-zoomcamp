@@ -1,0 +1,16 @@
+This is a description of the capstone project submitted towards the requirement of certification from DataTalksClub
+on completing MLOps Zoomcamp 2023.
+For the project, I have selected publicly available Divvy Bike Sharing dataset provided by Chicago Transportation.
+Data Source path
+Awesome-public-datasets-> Government-> Chicago-> Transportation-> Divvy Trips
+https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg
+https://ride.divvybikes.com/system-data
+https://divvy-tripdata.s3.amazonaws.com/index.html
+
+Possible use cases can be -
+1. Given the starting station id and destination station id, predict the time length of the trip.
+2. Given starting station and start time, predict the destination station and ETA. 
+
+Since, the course is focused on learning mlops techniques, the project objective is limited to 1st for now.
+Watch this space for future updates on 2nd use case
+
