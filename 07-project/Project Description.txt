@@ -1,11 +1,10 @@
-This is a description of the capstone project submitted towards the requirement of certification from DataTalksClub
+This project is submitted towards the fulfilment of requirement for certification from DataTalksClub
 on completing MLOps Zoomcamp 2023.
-For the project, I have selected publicly available Divvy Bike Sharing dataset provided by Chicago Transportation.
-Data Source path
+I have selected publicly available "Divvy Bike Sharing" dataset provided by Chicago Transportation.
+Data Source path - https://divvy-tripdata.s3.amazonaws.com/index.html
 Awesome-public-datasets-> Government-> Chicago-> Transportation-> Divvy Trips
-https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg
-https://ride.divvybikes.com/system-data
-https://divvy-tripdata.s3.amazonaws.com/index.html
+(https://data.cityofchicago.org/Transportation/Divvy-Trips/fg6s-gzvg)
+(https://ride.divvybikes.com/system-data)
 
 Possible use cases can be -
 1. Given the starting station id and destination station id, predict the time length of the trip.
@@ -14,3 +13,21 @@ Possible use cases can be -
 Since, the course is focused on learning mlops techniques, the project objective is limited to 1st for now.
 Watch this space for future updates on 2nd use case
 
+The columns in the dataset are described below =>
+ride_id 	- ride identifier assigned to every bike trip
+rideable_type   - whether bike is 'electric_bike' or 'classic_bike' or 'docked_bike'
+started_at  	- trip start time
+ended_at  	- trip end time
+start_station_name - name of the bike station where trip started
+start_station_id - identifier for the starting station
+end_station_name - name of the bike station where trip ended
+end_station_id  - identifier for the ending station
+start_lat  	- latitude of the trip starting station
+start_lng  	- longitude of the trip starting station
+end_lat  	- latitude of the trip ending station
+end_lng  	- longitude of the trip ending station
+member_casual   - whether bike rider has a membership or it's a casual trip taken by a tourist
+
+New features defined for the use case are =>
+trip_duration - computed as time difference between 'ended_at' and 'started_at'
+trip_distance - calculated with geopy.distance using (lat,lng) of start and end stations.
