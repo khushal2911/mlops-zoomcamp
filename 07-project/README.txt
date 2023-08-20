@@ -1,3 +1,5 @@
+ML Project is described in detail in "Project Description.txt"
+
 Create a pipenv and install all the dependencies from .txt file
 1. 	pipenv install -r requirements.txt
 	pipenv shell
