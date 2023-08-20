@@ -29,3 +29,8 @@ Server - 172.20.0.1 (remote_addr from above message in terminal)
 Username - postgres
 Password - example
 Database - test
+
+Following Screenshots are saved in 'Views' folder
+-    Grafana Dashboard view, where four KPIs are monitored viz. 'prediction_drift', 'num_drifed_columns', 'median_trip_distance', 'share_missing_values'
+-    Completed Prefect Workflow 
+-    Data stored in PostgreSQL on Adminer
