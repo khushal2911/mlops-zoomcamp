@@ -1,7 +1,5 @@
-(base) ubuntu@ip-172-31-9-143:~/soft $ wget https://github.com/docker/compose/releases/download/v2.19.1/docker-compose-linux-x86_64 -O docker-compose
-(base) ubuntu@ip-172-31-9-143:~/soft $ chmod +x docker-compose
-
 Model performance is monitored for "202303-divvy-tripdata.csv" as given below.
+
 This needs a different environment. create 'mlops-project' conda env from requirements.txt in this folder.
       $ conda create -n 'mlops-project' 
       $ conda activate 'mlops-project
@@ -14,6 +12,8 @@ This will run prefect workflow with tasks 'prepare db', 'read data and make pred
 Data drift is computed in reference to predictions on '202302-divvy-tripdata.csv' saved in /ref_data/ folder
 
 ------------------ Running Grafana and Adminer on Web Browser ---------------
+      $ wget https://github.com/docker/compose/releases/download/v2.19.1/docker-compose-linux-x86_64 -O docker-compose
+      $ chmod +x docker-compose
       $ docker-compose up --build 
 Now, open grafana on web browser "https:\\localhost:3000" username/pwd - admin/Q1w2e3r4t5
 // If it doesn't work, forward ports 3000, 8080, and 5432 in VScode terminal.
