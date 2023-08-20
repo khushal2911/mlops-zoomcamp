@@ -1,4 +1,5 @@
 MLOps Project is described in detail in "Project Description.txt"
+Project Name - Chicago Divvy Bikes Trip Duration Prediction
 
 Create a pipenv and install all the dependencies from .txt file
 1. 	pipenv install -r requirements.txt
